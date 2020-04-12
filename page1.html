@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Ace's Space</title>
+</head>
+
+
+<body>
+    <!--HEADER-->
+    <div class="topbar">
+        <nav class="navbar1">
+            <span class="navbar-brand mb-0 h1">A c e ' s ◕ S p a c e</span>
+        </nav>
+    </div>
+    <!--Navigational Bar-->
+    <div class="topbar2">
+        <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Comp Navbar-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://fe06932c-452a-41bf-9fee-ae20fd339a11-ide.cs50.xyz:8080/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://fe06932c-452a-41bf-9fee-ae20fd339a11-ide.cs50.xyz:8080/page1.html">Living Room</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://fe06932c-452a-41bf-9fee-ae20fd339a11-ide.cs50.xyz:8080/page2.html">Office</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://fe06932c-452a-41bf-9fee-ae20fd339a11-ide.cs50.xyz:8080/page3.html">Garden</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0" action="https://google.com/search" method="get">
+                    <input name="q" class="form-control mr-sm-2" type="search" placeholder="Question?" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Google It</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <!--Section for Audio-->
+    <section class="section">
+        <h6>"Sorry, But I Like You!"</h6>
+        <!--Audio-->
+        <div class="audi">
+            <audio loop class="audi" controls autoplay>
+                <source class="audi" src="burbank.mp3" type="audio/mpeg"> Your brows  er does not support the audio element.
+            </audio>
+            <br>
+            <!--Crediting Music-->
+            <div id="credit">
+                <a href="https://soundcloud.com/danielburbank">Audio by Daniel Burbank</a>
+            </div>
+        </div>
+    </section>
+    <!--Image-->
+    <img class="image" src="back4.png" alt="Image of TV">
+    <!--Table-->
+    <section>
+        <h3>Shows I've Binged in the Living Room</h3>
+        <table class="table">
+            <tr>
+                <th>Show</th>
+                <th>Impact</th>
+                <th>Cried?</th>
+            </tr>
+            <tr>
+                <td>Chernobyl</td>
+                <td>10/10</td>
+                <td>Nah, but close.</td>
+            </tr>
+            <tr>
+                <td>HunterxHunter</td>
+                <td>9/10</td>
+                <td>Yes.</td>
+            </tr>
+            <tr>
+                <td>Steven Universe</td>
+                <td>8/10</td>
+                <td>Nope.</td>
+            </tr>
+        </table>
+    </section>
+    <script>
+        function page1() {
+            window.location.href = "https://fe06932c-452a-41bf-9fee-ae20fd339a11-ide.cs50.xyz:8080/page1.html";
+        }
+
+        function page2() {
+            window.location.href = "https://fe06932c-452a-41bf-9fee-ae20fd339a11-ide.cs50.xyz:8080/page2.html"
+        }
+
+        function page3() {
+            window.location.href = "https://fe06932c-452a-41bf-9fee-ae20fd339a11-ide.cs50.xyz:8080/page3.html"
+        }
+
+        function hahafunction() {
+            alert("Bruh.")
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
