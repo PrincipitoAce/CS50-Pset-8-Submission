@@ -1,31 +1,157 @@
 <!DOCTYPE html>
 
-<html>
-    <head>
-        <title>Ace's Website</title>
-        <style>
-            body
-            {
-                background-color: lightblue;
-            }
-            h1
-            {
-                color: blue;
-            }
-            .bar
-            {
-                background-color: orange;
-                border-radius: 5px;
-                padding: 10px;
-                margin: 20px;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>A Message!</h1>
-        <p>Hello, everyone!</p>
-        <img src="Profile Photo.jpg" alt="ProfilePhoto">
-        <button class="bar">Credit Card Information</button>
-        <button class="bar">Social Security Number</button>
-    </body>
+<html lang="en">
+
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Ace's Space</title>
+</head>
+
+<body>
+    <!--HEADER-->
+    <div class="topbar">
+        <nav class="navbar1">
+            <span class="navbar-brand mb-0 h1">A c e ' s ◕ S p a c e</span>
+        </nav>
+    </div>
+    <!--Navigational Bar-->
+    <div class="topbar2">
+        <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Comp Navbar-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://fe06932c-452a-41bf-9fee-ae20fd339a11-ide.cs50.xyz:8080/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://fe06932c-452a-41bf-9fee-ae20fd339a11-ide.cs50.xyz:8080/page1.html">Living Room</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://fe06932c-452a-41bf-9fee-ae20fd339a11-ide.cs50.xyz:8080/page2.html">Office</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://fe06932c-452a-41bf-9fee-ae20fd339a11-ide.cs50.xyz:8080/page3.html">Garden</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0" action="https://google.com/search" method="get">
+                    <input name="q" class="form-control mr-sm-2" type="search" placeholder="Question?" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Google It</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <!--Section for Audio-->
+    <section class="section">
+        <h6>"Sorry, But I Like You!"</h6>
+        <!--Audio-->
+        <div class="audi">
+            <audio loop class="audi" controls autoplay>
+                <source class="audi" src="burbank.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+            </audio>
+            <br>
+            <!--Crediting Music-->
+            <div id="credit">
+                <a href="https://soundcloud.com/danielburbank">Audio by Daniel Burbank</a>
+            </div>
+        </div>
+    </section>
+    <!--Image-->
+    <img class="image" src="back2.png" alt="Image of Workspace">
+    <!--Time-->
+    <div class="datetimebutton">
+        <h1>What Time Is It Where You Live?</h1>
+        <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+            Display Date and Time.</button>
+        <p id="demo"></p>
+    </div>
+    <!--Text-->
+    <section class="section">
+        <h6>Tiempo</h6>
+        <p>
+            Time is essential. I wish I had more time to do things that I like, time management is something that I'm trying to work on at the moment.
+            Welcome to my virtual space! Maybe when I can find the time, I'll give you a tour!
+        </p>
+    </section>
+    <!--Image and Button-->
+    <div class="img2">
+        <button onclick=page1() class="button">
+            <span class="border">
+          Living Room
+        </span>
+        </button>
+    </div>
+    <!--Text-->
+    <section class="section">
+        <h6>Gente</h6>
+        <p>
+            The living room is such a nice place. Whether it's binging shows or watching people on the street stroll by, it's
+            one of the best places to exist in. Especially during quarantine. Being the type of person that usually coops up in their
+            room, the living room offers a different atmosphere that cheers me up.
+        </p>
+    </section>
+    <!--Image and Button-->
+    <div class="img3">
+        <button onclick=page2() class="button">
+            <span class="border">
+          Office
+        </span>
+        </button>
+    </div>
+    <!--Text-->
+    <section class="section">
+        <h6>Trabajo</h6>
+        <p>
+            Offices are places of creative spaces, I personally love to doodle and relax whenever possible. There's a small room in my home we've
+            set aside as an office space for peak productivity. It's very dark though.
+        </p>
+    </section>
+    <div class="img4">
+        <button onclick=page3() class="button">
+            <span class="border">
+          Garden
+        </span>
+        </button>
+    </div>
+    <!--Text-->
+    <section class="section">
+        <h6>Vida</h6>
+        <p>
+            People often hide important documents in safes, like their
+            <button onclick="hahafunction()" class="hahabutton">Social Security Number</button>
+            or
+            <button onclick="hahafunction()" class="hahabutton">Credit Card Number</button>!
+        </p>
+        <p>Personally, I find the garden more effective. Even I can't find them!</p>
+        <p>
+            I don't often encounter many gardens where I live, but I love seeing them!
+            It's at times like these that I wish I were in Cambridge to walk around the gardens there to look at the flora.
+            Although, I appreciate my parents own garden as well, it's filled with oranges, pomegranates, lemons, and other produce that have helped on hungry days!
+        </p>
+    </section>
+    <script>
+        function page1() {
+            window.location.href = "https://fe06932c-452a-41bf-9fee-ae20fd339a11-ide.cs50.xyz:8080/page1.html";
+        }
+
+        function page2() {
+            window.location.href = "https://fe06932c-452a-41bf-9fee-ae20fd339a11-ide.cs50.xyz:8080/page2.html"
+        }
+
+        function page3() {
+            window.location.href = "https://fe06932c-452a-41bf-9fee-ae20fd339a11-ide.cs50.xyz:8080/page3.html"
+        }
+
+        function hahafunction() {
+            alert("Bruh.")
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
 </html>
