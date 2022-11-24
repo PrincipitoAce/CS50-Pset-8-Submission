@@ -1,3 +1,2 @@
 # Website submission for CS50 Pset 8
-# Repository formerly named principitoace.github.io 
-# URL now in use elsewhere 
+## NOTE: Repository formerly named principitoace.github.io, this URL is now in use for my personal website 
